@@ -4,13 +4,13 @@
     --mainTextColor-light:#000;
     --secondaryTextColor-light:rgb(51 51 51);
     --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBorderColor-light:rgb(199, 105, 199);
     --mainBgColor-light:rgb(249, 250,251);
 
     --mainTextColor-dark:#fff;
     --secondaryTextColor-dark:#adb0b1;
     --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
+    --mainBorderColor-dark:#5a2a52;
     --mainBgColor-dark:#131415;
 
     --mainTextColor:var(--mainTextColor-dark);
