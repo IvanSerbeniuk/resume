@@ -13,17 +13,11 @@
     --mainBorderColor-dark:#2b3031;
     --mainBgColor-dark:#131415;
 
-    --mainTextColor:var(--mainTextColor-light);
-    --secondaryTextColor:var(--secondaryTextColor---mainTextColor-light);
-    --mainLinkColor:var(--mainLinkColor---mainTextColor-light);
-    --mainBorderColor:var(--mainBorderColor---mainTextColor-light);
-    --mainBgColor:var(--mainBgColor---mainTextColor-light);
-
-    --mainTextColor:#000;
-    --secondaryTextColor:(51 51 51);
-    --mainLinkColor:#0da2b8;
-    --mainBorderColor:rgb(218, 218, 218);
-    --mainBgColor:rgb(249, 250,251);
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor---mainTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor---mainTextColor-dark);
+    --mainBorderColor:var(--mainBorderColor---mainTextColor-dark);
+    --mainBgColor:var(--mainBgColor---mainTextColor-dark);
 
 
 }
