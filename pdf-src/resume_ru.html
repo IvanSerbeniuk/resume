@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Иван Сербенюк</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --plum: #5a2a52; --ink: #333; --muted: #555; }
+  html, body { width: 210mm; height: 297mm; }
+  body { font-family: "Open Sans", Arial, sans-serif; font-size: 8.6pt; color: var(--ink); display: flex; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  aside { width: 72mm; background: var(--plum); color: #fff; padding: 12mm 8mm 10mm 10mm; }
+  main { flex: 1; padding: 12mm 11mm 8mm 9mm; }
+  .photo { width: 40mm; height: 40mm; border-radius: 50%; border: 3px solid #fff; object-fit: cover; display: block; margin: 0 auto 9mm; }
+  h2 { font-family: Montserrat, sans-serif; letter-spacing: .14em; font-size: 11pt; font-weight: 700; text-transform: uppercase; }
+  aside h2 { border-bottom: 1.5px solid #fff; padding-bottom: 1.5mm; margin: 6mm 0 3mm; }
+  aside ul { list-style: none; }
+  aside li { margin-bottom: 2mm; line-height: 1.35; word-break: break-word; }
+  aside .dots li::before { content: "•"; margin-right: 2mm; }
+  aside .lbl { opacity: .75; font-size: 7.4pt; display: block; }
+  aside b { font-family: Montserrat, sans-serif; font-weight: 600; letter-spacing: .04em; }
+  aside a { color: #fff; text-decoration: none; }
+  .name { font-family: Montserrat, sans-serif; font-size: 25pt; color: #444; letter-spacing: .02em; margin-top: 8mm; }
+  .name b { font-weight: 700; }
+  .name span { font-weight: 400; }
+  .role { font-family: Montserrat, sans-serif; font-size: 12pt; letter-spacing: .06em; color: var(--muted); margin-top: 2mm; }
+  .bar { width: 15mm; height: 2px; background: var(--plum); margin: 3mm 0 0; }
+  main h2 { color: var(--plum); border-bottom: 1.5px solid var(--plum); padding-bottom: 1.5mm; margin: 7mm 0 3mm; }
+  .profile { text-align: justify; line-height: 1.5; color: var(--muted); }
+  .jobs { border-left: 1.5px solid var(--plum); margin-left: 1mm; padding-left: 4mm; }
+  .job { position: relative; margin-bottom: 3.5mm; }
+  .job::before { content: ""; position: absolute; left: -5.7mm; top: 1.2mm; width: 6px; height: 6px; border-radius: 50%; background: var(--plum); }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-head strong { font-family: Montserrat, sans-serif; font-size: 9.6pt; color: #444; }
+  .job-head .date { font-size: 8pt; color: var(--muted); letter-spacing: .04em; }
+  .job .title { color: var(--muted); margin: .5mm 0 1mm; }
+  .job ul { padding-left: 4.5mm; }
+  .job li { line-height: 1.42; margin-bottom: .3mm; }
+  .job ul ul { list-style: circle; }
+  .job a { color: inherit; text-decoration: none; white-space: nowrap; }
+  .projects .proj { margin-bottom: 2mm; line-height: 1.42; }
+  .projects .proj strong { font-family: Montserrat, sans-serif; color: #444; }
+  .projects .proj .stack { color: var(--muted); font-size: 7.8pt; }
+  .projects a { color: inherit; text-decoration: none; white-space: nowrap; }
+  aside .grp { opacity: .75; font-size: 7.4pt; display: block; letter-spacing: .04em; }
+</style>
+</head>
+<body>
+<aside>
+  <img class="photo" src="../assets/images/low_portrait.jpeg" alt="">
+
+  <h2>Контакты</h2>
+  <ul>
+    <li>+380 96 230 5635</li>
+    <li>serbeniuk.ivan@gmail.com</li>
+    <li>Украина, Одесса</li>
+    <li><a href="https://ivanserbeniuk.github.io/resume">ivanserbeniuk.github.io/resume</a></li>
+    <li><a href="https://www.linkedin.com/in/ivan-serbeniuk-30107b1b3/">linkedin.com/in/ivan-serbeniuk-30107b1b3</a></li>
+    <li><a href="https://t.me/SerIvanchik">t.me/SerIvanchik</a></li>
+    <li><a href="https://github.com/IvanSerbeniuk">github.com/IvanSerbeniuk</a></li>
+  </ul>
+
+  <h2>Образование</h2>
+  <ul>
+    <li style="margin-bottom:3mm"><b>ОБУЧАЮСЬ СЕЙЧАС</b><br><b>УНИВЕРСИТЕТ УШИНСКОГО</b><br>Одесса — бакалавриат, информатика</li>
+    <li><b>2019 – 2022</b><br><b>WYŻSZA SZKOŁA BANKOWA</b><br>Гданьск, Польша — психология в бизнесе</li>
+  </ul>
+
+  <h2>Навыки</h2>
+  <ul>
+    <li><span class="grp">БЭКЕНД</span>PHP (Laravel, CodeIgniter, WordPress), Python (FastAPI, Django), REST API</li>
+    <li><span class="grp">ФРОНТЕНД И МОБИЛЬНАЯ</span>JavaScript, React, React Native</li>
+    <li><span class="grp">БАЗЫ ДАННЫХ</span>MySQL, PostgreSQL</li>
+    <li><span class="grp">ИНТЕГРАЦИИ</span>OpenAI GPT, Google OCR, Bitrix24, Google Analytics, Ringostat</li>
+    <li><span class="grp">СКРАПИНГ</span>Selenium, BeautifulSoup, Scrapy</li>
+    <li><span class="grp">DEVOPS</span>Docker, CI/CD, Git, Linux, AWS, DigitalOcean</li>
+  </ul>
+
+  <h2>Языки</h2>
+  <ul class="dots">
+    <li>Украинский — родной</li>
+    <li>Русский — свободно</li>
+    <li>Английский — B2</li>
+    <li>Польский — B1</li>
+  </ul>
+</aside>
+
+<main>
+  <div class="name"><b>ИВАН</b> <span>СЕРБЕНЮК</span></div>
+  <div class="role">FULL STACK РАЗРАБОТЧИК · PHP И PYTHON</div>
+  <div class="bar"></div>
+
+  <h2>О себе</h2>
+  <p class="profile">Full Stack разработчик, 3+ года опыта с PHP (Laravel, CodeIgniter) и Python (FastAPI, Django), на фронтенде — React и React Native. Разрабатываю веб-приложения, бэкенд-сервисы и интеграции с CRM и LLM: запустил в продакшн конфигураторы мебели и систему обработки документов на базе LLM (GPT + OCR), переписал сайты компании с нуля.</p>
+
+  <h2>Опыт работы</h2>
+  <div class="jobs">
+    <div class="job">
+      <div class="job-head"><strong>Mitridat Container</strong><span class="date">05/2026 – НАСТ. ВРЕМЯ</span></div>
+      <div class="title">Full Stack разработчик · <a href="https://mitridat-container.com/ru/">mitridat-container.com</a></div>
+      <ul>
+            <li>Переписал сайты компании с нуля на Laravel с собственной админкой: выше скорость и конверсия, удобнее управление контентом</li>
+            <li>Разработка бэкенд-сервисов на FastAPI</li>
+            <li>Интеграция сайтов с Bitrix24 CRM</li>
+            <li>Настройка аналитики и коллтрекинга: Google Analytics, Ringostat</li>
+            <li>Веб-скрапинг и сбор данных</li>
+            <li>Разработка мобильного приложения компании на React Native</li>
+            <li>Разработка и поддержка сайтов на Laravel: <a href="https://bex-auto.com/">bex-auto.com</a>, <a href="https://bex-auto.md/">bex-auto.md</a>, <a href="https://kz.bex-auto.com/">kz.bex-auto.com</a>, <a href="https://bex-space.com/">bex-space.com</a>, <a href="https://bex-tech.com/">bex-tech.com</a></li>
+            <li>Поддержка корпоративного сайта на WordPress (mitridat-container.com)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><strong>WCS</strong><span class="date">2023 – 12/2025</span></div>
+      <div class="title">Full Stack разработчик — Middle</div>
+      <ul>
+        <li>Обработка страховых документов с помощью LLM
+          <ul>
+            <li>Интеграция OpenAI GPT и Google OCR для автоматического анализа документов</li>
+            <li>Классификация документов и извлечение данных</li>
+            <li>Разработка API для передачи структурированных результатов агентам</li>
+          </ul>
+        </li>
+        <li>Конфигураторы мебели
+          <ul>
+            <li>Бэкенд (CodeIgniter 3/4): бизнес-логика, REST API</li>
+            <li>Фронтенд: React, JavaScript, вёрстка</li>
+            <li>Базы данных: MySQL, оптимизация запросов</li>
+            <li>Проекты: specialt.net/tables, build.loftwall.com, build.ghent.com, а также несколько закрытых B2B-конфигураторов</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><strong>Фриланс / некоммерческие проекты</strong><span class="date">02/2022 – 2023</span></div>
+      <ul>
+        <li>Волонтёрский сайт <a href="https://respondua.org/en/">respondua.org</a>
+          <ul>
+            <li>Бэкенд (Django/Python): разработка API, интеграции</li>
+            <li>Фронтенд: вёрстка, JavaScript</li>
+            <li>Docker, CI/CD, деплой на DigitalOcean/AWS</li>
+          </ul>
+        </li>
+        <li>Проекты по веб-скрапингу: Selenium, BeautifulSoup, Scrapy, Requests</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Проекты</h2>
+  <div class="projects">
+    <div class="proj"><strong>Study Flashcards</strong> — REST API на бэкенде, фронтенд на React <span class="stack">· PHP, CodeIgniter 4, React · <a href="https://github.com/IvanSerbeniuk/Study_flashcards">github.com/IvanSerbeniuk/Study_flashcards</a></span></div>
+    <div class="proj"><strong>The Wild Oasis</strong> — панель управления бронированиями <span class="stack">· React, Supabase · <a href="https://oasis-booking-online.netlify.app/">oasis-booking-online.netlify.app</a></span></div>
+    <div class="proj"><strong>social-rank-bot</strong> — Telegram-бот для рейтинга участников чата <span class="stack">· Python · <a href="https://t.me/social_rank_bot">t.me/social_rank_bot</a></span></div>
+  </div>
+</main>
+</body>
+</html>

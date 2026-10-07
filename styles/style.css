@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 :root{
     --mainTextColor-light:#000;
@@ -23,7 +23,7 @@
 }
 
 *{
-    font-family: 'Readex Pro';
+    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
@@ -110,20 +110,6 @@ li{
     list-style: none;
 }
 
-#wrapper--techstack__items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.9em;
-}
-
-.card--techstack{
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    align-items: center;
-}
-
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
@@ -183,4 +169,45 @@ li {
         border-left: none;
         padding-left: 0;
     }
+}
+.card--project p{
+    margin: 0.4em 0 0;
+    font-size: 0.9em;
+}
+
+.card--project .project--stack{
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.card--project .project--links a{
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+.lang-switch{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.25em;
+    font-size: 0.8em;
+}
+
+.lang-switch a{
+    padding: 0.2em 0.7em;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 999px;
+    color: var(--secondaryTextColor);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+}
+
+.lang-switch a:hover{
+    color: var(--mainLinkColor);
+}
+
+.lang-switch a.active{
+    background-color: var(--mainBorderColor);
+    color: var(--mainTextColor);
+    pointer-events: none;
 }
